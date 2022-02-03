@@ -1,21 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Cat from './components/Cat';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={require('./kendrick.png')} className="App-logo" alt="logo" />
-        <p>
-          Bad Cat
-        </p>
-        <button>
-          good cat
-        </button>
-        <button>
-          bad cat
-        </button>
-      </header>
+      <Header/>
+      <Cat/>
     </div>
   );
 }
