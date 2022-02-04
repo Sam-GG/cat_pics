@@ -1,22 +1,23 @@
 import Button from './Button';
+import React, {useState} from 'react';
 
 export const Cat = () => {
     var catUrl = "https://cataas.com/cat";
-    var verdict = "Good or Bad?";
+    
+    const [verdict, updateVerdict] = useState("Cat or Brat?");
 
-    const handleClick = (value) => {
-        verdict = value;
-        console.log(value);
-    };
+    function handleClick(value){
+        updateVerdict(value);
+    }
 
     return (
         <div className="cat">
-            <img src={catUrl} className="App-logo" alt="logo" />
+            <img src={catUrl} className="catPhoto" alt="cat" />
             <p>
                 {verdict}
             </p>
-            <Button text="Good Cat" color="green" onClick={function(e){handleClick("Good")}}/>
-            <Button text="Brat Cat" color="red" onClick={function(e){handleClick("Bad")}}/>
+            <Button text="Cat" color="green" onClick={function(e){handleClick("Cat")}}/>
+            <Button text="Brat" color="red" onClick={function(e){handleClick("Brat")}}/>
         </div>
     )
 };
