@@ -1,4 +1,5 @@
 import Button from './Button';
+import Question from './Question';
 import React, {useState} from 'react';
 
 export const Cat = () => {
@@ -18,6 +19,8 @@ export const Cat = () => {
             </p>
             <Button text="Cat" color="green" onClick={function(e){handleClick("Cat")}}/>
             <Button text="Brat" color="red" onClick={function(e){handleClick("Brat")}}/>
+            <Question prompt="What would you call this cat?" handleChange={console.log("changed")}/>
+            <Question prompt="What is this cat's favourite movie?" handleChange={console.log("changed")}/>
         </div>
     )
 };
