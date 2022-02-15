@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Button';
 
 export const Question = ({prompt, handleChange}) => {
   return (
@@ -7,8 +8,8 @@ export const Question = ({prompt, handleChange}) => {
         <input
             type="text"
             // value={this.state.value}
-            onChange={handleChange}
          />
+         <Button text="Submit" color="green" onClick={handleChange} />
     </div>
   )
 };
