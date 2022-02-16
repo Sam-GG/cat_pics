@@ -57,3 +57,12 @@ input {
   -webkit-box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.3);
 
 }
+
+.names-demo {
+  display: flex;
+  /* font-size: xx-large; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
