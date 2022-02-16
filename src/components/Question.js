@@ -7,9 +7,8 @@ export const Question = ({prompt, handleChange}) => {
         {prompt}
         <input
             type="text"
-            // value={this.state.value}
          />
-         <Button text="Submit" color="green" onClick={handleChange} />
+         <Button text="Submit" color="rgb(152, 132, 175)" onClick={handleChange} />
     </div>
   )
 };
